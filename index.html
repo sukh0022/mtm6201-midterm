@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <title>Portfolio - Sukhman Kaur</title>
+</head>
+
+<body>
+  <!-- Navigation Section -->
+  <nav>
+    <div class="nav-container">
+      <a href="./index.html" class="nav-title">Sukhman Kaur</a>
+      <div class="links">
+       <div class="links">
+        <a href="about.html" class="link">About</a>
+        <a href="portfolio.html" class="link">Portfolio</a>
+        <a href="skills.html" class="link">Skills</a>
+      </div>
+      </div>
+      <a href="#contact" class="nav-work">HIRE ME!</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <h1 class="name">Sukhman Kaur</h1>
+      <h1 class="expert">Interactive Media Designer</h1>
+      <h1 class="description">
+        Web Design and Motion Graphics for the people and companies who want
+        to take their business to the next level.
+      </h1>
+    </header>
+    <canvas></canvas>
+
+    <section class="about" id="about">
+      <div class="top-level">
+        <h1 class="heading" data-aos="fade-up">About Me</h1>
+        <h2 data-aos="fade-up">
+          Knowing about me will help you make a clear and conscious decision.
+        </h2>
+      </div>
+
+      <div style="display: flex; align-items: center;" class="my-about">
+        <div class="profile_photo">
+          <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg"
+            style="width: 250px; border-radius:10px ;" alt="Profile Photo of Sukhman Kaur" />
+        </div>
+
+        <div class="paragraph-c" style="display: flex; align-self: center;" data-aos="fade-up">
+          <p>
+            Web development and design has been my forte since a year and as
+            they say you cannot learn everything and therefore everyday I learn
+            something new from the ever-growing internet and the scope of web
+            development.
+          </p>
+        </div>
+
+        <div class="paragraph-c" data-aos="fade-up">
+          <p>
+            The world of technology really fascinated me when I was young and so
+            I decided to take my imagination to the next level where I could bring
+            ideas to reality.
+          </p>
+        </div>
+      </div>
+      <a href="./res.pdf" target="_blank" class="download">Download Resume</a><br /><br />&nbsp;
+    </section>
+
+    <section class="skills" style="position: relative;" id="skills">
+      <div class="starfield" style="height:100%; left:0; position:absolute; top:0; width:100%;"></div>
+      <h1 style="transform: translateY(-20px);">Skills</h1>
+      <h2 style="transform: translateY(-20px);">Things that I know</h2>
+      <div class="tech" data-aos="fade-up">
+        <div class="block">
+          <img src="./images/tech/adobeaftereffects.svg" alt="Adobe After Effects" />
+          <h3>Adobe After Effects</h3>
+        </div>
+        <div class="block">
+          <img src="./images/tech/adobeillustrator.svg" alt="Adobe Illustrator" />
+          <h3>Adobe Illustrator</h3>
+        </div>
+        <div class="block">
+          <img src="./images/tech/adobephotoshop.svg" alt="Adobe Photoshop" />
+          <h3>Adobe Photoshop</h3>
+        </div>
+        <div class="block">
+          <img src="./images/tech/html5.svg" alt="HTML5" />
+          <h3>HTML5</h3>
+        </div>
+        <div class="block">
+          <img src="./images/tech/css3.svg" alt="CSS3" />
+          <h3>CSS3</h3>
+        </div>
+        <div class="block">
+          <img src="./images/tech/javascript.svg" alt="Javascript" />
+          <h3>Javascript</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <h1 class="heading" data-aos="fade-up">Portfolio</h1>
+      <h2 data-aos="fade-up">
+        Browse through my work in order to get a brighter picture of my
+        dedication.
+      </h2>
+
+      <div class="myWork" id="portfolio">
+        <div class="work-cards">
+          <a href="#" target="_blank">
+            <div class="card">
+              <img srcset="
+              ./images/portfolio.png 700w,
+              ./images/portfolio-256.png 480w,
+          " sizes="(max-width: 320px) 280px,
+                 (max-width: 480px) 440px" alt="Project Demo"  />
+              <h2>Project Demo</h2>
+            </div>
+          </a>
+        </div>
+        <div class=" work-cards">
+          <a href="#" target="_blank">
+            <div class="card">
+              <img srcset="
+              ./images/portfolio.png 700w,
+              ./images/portfolio-256.png 480w,
+          " sizes="(max-width: 320px) 280px,
+                 (max-width: 480px) 440px" alt="Project Demo"  />
+              <h2>Project Demo</h2>
+            </div>
+          </a>
+        </div>
+        <div class="work-cards">
+          <a href="#" target="_blank">
+            <div class="card">
+              <img srcset="
+              ./images/portfolio.png 700w,
+              ./images/portfolio-256.png 480w,
+          " sizes="(max-width: 320px) 280px,
+                 (max-width: 480px) 440px" alt="Project Demo"  />
+              <h2>Project Demo</h2>
+            </div>
+          </a>
+        </div>
+        <div class="work-cards">
+          <a href="#" target="_blank">
+            <div class="card">
+              <img srcset="
+              ./images/portfolio.png 700w,
+              ./images/portfolio-256.png 480w,
+          " sizes="(max-width: 320px) 280px,
+                 (max-width: 480px) 440px" alt="Project Demo"  />
+              <h2>Project Demo</h2>
+            </div>
+          </a>
+        </div>
+        <div class="work-cards">
+          <a href="#" target="_blank">
+            <div class="card">
+              <img srcset="
+              ./images/portfolio.png 700w,
+              ./images/portfolio-256.png 480w,
+          " sizes="(max-width: 320px) 280px,
+                 (max-width: 480px) 440px" alt="Project Demo"  />
+              <h2>Project Demo</h2>
+            </div>
+          </a>
+        </div>
+        <div class="work-cards">
+          <a href="#" target="_blank">
+            <div class="card">
+              <img srcset="
+              ./images/portfolio.png 700w,
+              ./images/portfolio-256.png 480w,
+          " sizes="(max-width: 320px) 280px,
+                 (max-width: 480px) 440px" alt="Project Demo"  />
+              <h2>Project Demo</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h1 class="heading" data-aos="fade-up">Contact Me</h1>
+      <h2 data-aos="fade-up">
+        Made up your and would like to take you business to the next level.
+        Fill in the form and I will be with you in no time.
+      </h2>
+      <div class="main-contact">
+        <form action="" class="form" data-aos="fade-up">
+          <div class="group">
+            <input type="text" placeholder="Enter name" required />
+          </div>
+
+          <div class="group">
+            <input type="email" required placeholder="Enter email" />
+          </div>
+
+          <div class="group">
+            <input type="tel" required placeholder="Enter mobile" />
+          </div>
+
+          <div class="group">
+            <textarea name="" required id="" cols="30" rows="5">
+  Enter Message</textarea>
+          </div>
+          <button type="submit" data-aos="fade-up">Send Message &rarr;</button>
+        </form>
+
+        <div class="otherinfo">
+
+          <div class="col-lg-6 mt-5 info-address">
+            <h3 class="h3">Social Media</h3>
+            <div class="social-media">
+              <a href="https://www.facebook.com">
+                <img src="https://cdn-icons-png.flaticon.com/512/1051/1051309.png" alt="Project Demo"  />
+              </a>
+              <a href="https://www.instagram.com">
+                <img src="https://cdn-icons-png.flaticon.com/512/1400/1400829.png" alt="Project Demo"  />
+              </a>
+              <a href="https://www.dribble.com/">
+                <img
+                  src="https://cdn-icons.flaticon.com/png/512/4401/premium/4401401.png?token=exp=1645624480~hmac=6669eca02b40cb3c4a846b8df461e622"
+                  alt="Project Demo"  />
+              </a>
+            </div>
+          </div>
+
+
+          <h3 class="h3"><img src="https://cdn-icons-png.flaticon.com/512/535/535188.png" alt="Project Demo"  />Address</h3>
+          <div class="address">
+            <p>
+              <span>
+                <!-- Img tag with location logo from internet -->
+
+              </span>
+              <span>
+                <span>Sukhman Kaur</span>
+                <span>#10, 411 Lynden Road, Stroud, Ontario, Canada</span>
+              </span>
+            </p>
+          </div>
+
+          <h3 class="h3"> <img
+              src="https://cdn-icons.flaticon.com/png/512/4296/premium/4296488.png?token=exp=1645624628~hmac=4447d908878374c70e6713b1a52d614c"
+              alt="Project Demo"  /> Contact Information</h3>
+          <div class="contact-info">
+            <p>
+              <span>
+
+              </span>
+              <span>
+                <span style="margin-bottom: .5rem;">416-205-0999</span>
+              </span>
+            </p>
+            <p>
+              <span>
+                <img
+                  src="https://cdn-icons.flaticon.com/png/512/542/premium/542689.png?token=exp=1645624643~hmac=3369d83ef11ff10e9baceed1b13005c8"
+                  alt="Project Demo"  />
+              </span>
+              <span>
+                <span>
+                  <a href="mailto:abc@gmail.com" class="email"> Email me </a>
+                </span>
+              </span>
+            </p>
+          </div>
+        </div>
+
+    </section>
+  </div>
+  <footer>
+    <h2>&copy; 2023 Sukhman Kaur</h2>
+  </footer>
+
+
+</body>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  var canvas = document.querySelector('canvas');
+
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  var ctx = canvas.getContext('2d');
+
+  // ctx.fillRect(100, 100, 100, 100);
+
+  // ctx.beginPath();
+
+  // ctx.moveTo(50, 300);
+  // ctx.lineTo(300, 50);
+  // ctx.stroke();
+
+  // for(let i = 0; i < 10; i++) {
+  //   var x = Math.round(Math.random() * window.innerWidth);
+  //   var y = Math.round(Math.random() * window.innerHeight);
+  //   const MILLION = 1000000;
+  //   var color = '#' + Math.round(Math.random() * MILLION);
+
+  //   ctx.beginPath();
+  //   ctx.arc(x, y, 50, 0, Math.PI * 2, false);
+  //   ctx.strokeStyle = color;
+  //   ctx.stroke();
+  // }
+
+  var mouse = {
+    x: undefined,
+    y: undefined,
+  };
+
+  window.addEventListener('mousemove', function (e) {
+    mouse.x = e.x;
+    mouse.y = e.y;
+  });
+
+  window.addEventListener('resize', function () {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    init();
+  });
+
+  var colorArray = [
+    '#2C3E50',
+    '#FC4349',
+    '#D7DADB',
+  ];
+
+  function Circle(x, y, dx, dy, radius, maxRadius) {
+    this.x = x;
+    this.y = y;
+    this.dx = dx;
+    this.dy = dy;
+    this.radius = radius;
+    this.minRadius = radius;
+    this.maxRadius = maxRadius;
+    this.color = colorArray[Math.floor(Math.random() * 5)];
+
+    this.draw = function () {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+      ctx.strokeStyle = this.color;
+      ctx.fillStyle = this.color;
+      ctx.stroke();
+      ctx.fill();
+    }
+
+    this.update = function () {
+      if (this.x + radius > innerWidth || this.x - radius < 0) {
+        this.dx = -this.dx;
+      }
+
+      if (this.y + radius > innerHeight || this.y - radius < 0) {
+        this.dy = -this.dy;
+      }
+      this.x += this.dx;
+      this.y += this.dy;
+
+      // Interactivity
+
+      if (mouse.x - this.x < 50 && mouse.x - this.x > -50 && mouse.y - this.y < 50 && mouse.y - this.y > -50) {
+        if (this.radius < this.maxRadius) {
+          this.radius += 1;
+        }
+      } else if (this.radius > this.minRadius) {
+        this.radius -= 1;
+      }
+
+      this.draw();
+    }
+  }
+
+  var circleArray = [];
+
+  function init() {
+    circleArray = [];
+    for (let i = 0; i <= 200; i++) {
+      var radius = Math.round(Math.random() * 10);
+      var maxRadius = Math.round(Math.random() * 10);
+      var x = Math.random() * (innerWidth - radius * 2) + radius;
+      var y = Math.random() * (innerHeight - radius * 2) + radius;
+      var dx = (Math.random() - 0.5) * 5;
+      var dy = (Math.random() - 0.5) * 5;
+      const MILLION = 100;
+
+      circleArray.push(new Circle(x, y, dx, dy, radius, maxRadius));
+    }
+  }
+
+  function animate() {
+    requestAnimationFrame(animate);
+    ctx.clearRect(0, 0, innerWidth, innerHeight);
+
+    circleArray.forEach(function (circle) {
+      circle.update();
+    });
+  }
+
+  init();
+  animate();
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+  /**
+   * A jQuery plugin that generates an interactive starfield inside a canvas element.
+   *
+   * Based on Chiptune's starfield.js:
+   * https://github.com/chiptune/js/blob/master/starfield.html
+   */
+  ; (function ($, window, document, undefined) {
+    // Plugin constructor
+    var Starfield = function (el, options) {
+      this.el = el;
+      this.$el = $(el);
+      this.options = options;
+
+      that = this;
+    };
+
+    var isPlaying;
+    var isInited = false;
+    var canCanvas = false;
+    var animId;
+
+    // http://paulirish.com/2011/requestanimationframe-for-smart-animating/
+    // http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
+
+    // requestAnimationFrame polyfill by Erik Möller. fixes from Paul Irish and Tino Zijdel
+
+    // MIT license
+
+    (function () {
+      var lastTime = 0;
+      var vendors = ['ms', 'moz', 'webkit', 'o'];
+      for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+        window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
+        window.cancelAnimationFrame = window[vendors[x] + 'CancelAnimationFrame']
+          || window[vendors[x] + 'CancelRequestAnimationFrame'];
+      }
+
+      if (!window.requestAnimationFrame)
+        window.requestAnimationFrame = function (callback, element) {
+          var currTime = new Date().getTime();
+          var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+          var id = window.setTimeout(function () { callback(currTime + timeToCall); },
+            timeToCall);
+          lastTime = currTime + timeToCall;
+          return id;
+        };
+
+      if (!window.cancelAnimationFrame)
+        window.cancelAnimationFrame = function (id) {
+          clearTimeout(id);
+        };
+    }());
+
+    // Plugin prototype
+    Starfield.prototype = {
+      // Default settings
+      defaults: {
+        starColor: "rgba(255,255,255,1)",
+        bgColor: "rgba(0,0,0,1)",
+        mouseMove: true,
+        mouseColor: "rgba(0,0,0,0.2)",
+        mouseSpeed: 20,
+        fps: 15,
+        speed: 3,
+        quantity: 512,
+        ratio: 256,
+        divclass: "starfield"
+      },
+
+      // Resize the canvas
+      resizer: function () {
+        var oldStar = this.star;
+        var initW = this.context.canvas.width;
+        var initH = this.context.canvas.height;
+
+        this.w = this.$el.width();
+        this.h = this.$el.height();
+        this.x = Math.round(this.w / 2);
+        this.y = Math.round(this.h / 2);
+
+        // Check if the device is in portrait orientation
+        this.portrait = this.w < this.h;
+
+        // Get the ratio of the old height to the new height
+        var ratX = this.w / initW;
+        var ratY = this.h / initH;
+
+        this.context.canvas.width = this.w;
+        this.context.canvas.height = this.h;
+
+        // Recalculate the position of each star proportionally to new w and h
+        for (var i = 0; i < this.n; i++) {
+          this.star[i][0] = oldStar[i][0] * ratX;
+          this.star[i][1] = oldStar[i][1] * ratY;
+
+          this.star[i][3] = this.x + (this.star[i][0] / this.star[i][2]) * this.star_ratio;
+          this.star[i][4] = this.y + (this.star[i][1] / this.star[i][2]) * this.star_ratio;
+        }
+
+        that.context.fillStyle = that.settings.bgColor;
+        this.context.strokeStyle = this.settings.starColor;
+      },
+
+      init: function () {
+        // Get default settings 
+        this.settings = $.extend({}, this.defaults, this.options);
+
+        // Query variables
+        var url = document.location.href;
+        this.n = parseInt(
+          (url.indexOf('n=') != -1) ? url.substring(url.indexOf('n=') + 2, (
+            (url.substring(
+              url.indexOf('n=') + 2,
+              url.length)
+            ).indexOf('&') != -1) ? url.indexOf('n=') + 2 + (url.substring(
+              url.indexOf('n=') + 2,
+              url.length)
+            ).indexOf('&') :
+            url.length) :
+            this.settings.quantity
+        );
+
+        this.flag = true;
+        this.test = true;
+        this.w = 0;
+        this.h = 0;
+        this.x = 0;
+        this.y = 0;
+        this.z = 0;
+        this.star_color_ratio = 0;
+        this.star_x_save = 0;
+        this.star_y_save = 0;
+        this.star_ratio = this.settings.ratio;
+        this.star_speed = this.settings.speed;
+        this.star_speed_save = 0;
+        this.star = new Array(this.n);
+        this.color = this.settings.starColor;
+        this.opacity = 0.1;
+
+        this.cursor_x = 0;
+        this.cursor_y = 0;
+        this.mouse_x = 0;
+        this.mouse_y = 0;
+
+        this.canvas_x = 0;
+        this.canvas_y = 0;
+        this.canvas_w = 0;
+        this.canvas_h = 0;
+
+        this.fps = this.settings.fps;
+
+        // Check for device orientation support
+        this.desktop = !navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|BB10|IEMobile)/);
+        this.orientationSupport = window.DeviceOrientationEvent !== undefined;
+        this.portrait = null;
+
+        // Inject the canvas element
+        var canvasInit = function () {
+          that.w = that.$el.width();
+          that.h = that.$el.height();
+
+          that.initW = that.w;
+          that.initH = that.h;
+
+          that.portrait = that.w < that.h;
+
+          that.wrapper = $('<canvas />')
+            .addClass(that.settings.divclass);
+
+          that.wrapper.appendTo(that.el);
+
+          that.starz = $('canvas', that.el);
+
+          if (that.starz[0].getContext) { // Can canvas?
+            that.context = that.starz[0].getContext('2d');
+            canCanvas = true;
+          }
+
+          that.context.canvas.width = that.w;
+          that.context.canvas.height = that.h;
+        }
+        canvasInit();
+
+        // Create initial star array and canvas context
+        var starInit = function () {
+          // Get context for the canvas element
+          if (canCanvas) { // Check for canvas drawering abilities.
+            that.x = Math.round(that.w / 2);
+            that.y = Math.round(that.h / 2);
+            that.z = (that.w + that.h) / 2;
+            that.star_color_ratio = 1 / that.z;
+            that.cursor_x = that.x;
+            that.cursor_y = that.y;
+
+            // Big bang
+            for (var i = 0; i < that.n; i++) {
+              that.star[i] = new Array(5);
+
+              that.star[i][0] = Math.random() * that.w * 2 - that.x * 2;
+              that.star[i][1] = Math.random() * that.h * 2 - that.y * 2;
+              that.star[i][2] = Math.round(Math.random() * that.z);
+              that.star[i][3] = 0;
+              that.star[i][4] = 0;
+            }
+
+            // Set the colors
+            that.context.fillStyle = that.settings.bgColor;
+            that.context.strokeStyle = that.settings.starColor;
+          } else {
+            return;
+          }
+        }
+        starInit();
+
+        isInited = true;
+      },
+
+      // Iterate over every star on the field and move it slightly
+      anim: function () {
+
+        this.mouse_x = this.cursor_x - this.x;
+        this.mouse_y = this.cursor_y - this.y;
+        this.context.fillRect(0, 0, this.w, this.h);
+
+        for (var i = 0; i < this.n; i++) {
+          this.test = true;
+          this.star_x_save = this.star[i][3];
+          this.star_y_save = this.star[i][4];
+          this.star[i][0] += this.mouse_x >> 4;
+
+          // X coords
+          if (this.star[i][0] > this.x << 1) {
+            this.star[i][0] -= this.w << 1;
+            this.test = false;
+          }
+          if (this.star[i][0] < - this.x << 1) {
+            this.star[i][0] += this.w << 1;
+            this.test = false;
+          }
+
+          // Y coords
+          this.star[i][1] += this.mouse_y >> 4;
+          if (this.star[i][1] > this.y << 1) {
+            this.star[i][1] -= this.h << 1;
+            this.test = false;
+          }
+          if (this.star[i][1] < - this.y << 1) {
+            this.star[i][1] += this.h << 1;
+            this.test = false;
+          }
+
+          // Z coords
+          this.star[i][2] -= this.star_speed;
+          if (this.star[i][2] > this.z) {
+            this.star[i][2] -= this.z;
+            this.test = false;
+          }
+          if (this.star[i][2] < 0) {
+            this.star[i][2] += this.z;
+            this.test = false;
+          }
+
+          this.star[i][3] = this.x + (this.star[i][0] / this.star[i][2]) * this.star_ratio;
+          this.star[i][4] = this.y + (this.star[i][1] / this.star[i][2]) * this.star_ratio;
+
+          if (this.star_x_save > 0
+            && this.star_x_save < this.w
+            && this.star_y_save > 0
+            && this.star_y_save < this.h
+            && this.test) {
+            this.context.lineWidth = (1 - this.star_color_ratio * this.star[i][2]) * 2;
+            this.context.beginPath();
+            this.context.moveTo(this.star_x_save, this.star_y_save);
+            this.context.lineTo(this.star[i][3], this.star[i][4]);
+            this.context.stroke();
+            this.context.closePath();
+          }
+        }
+
+      },
+
+      loop: function () {
+        this.anim();
+
+        animId = window.requestAnimationFrame(function () { that.loop() });
+      },
+
+      move: function () {
+        var doc = document.documentElement;
+
+        if (this.orientationSupport && !this.desktop) {
+          //$('<p class="output"></p>').prependTo('.content');
+          //var output = document.querySelector('.output');
+          window.addEventListener('deviceorientation', handleOrientation, false);
+        } else {
+          window.addEventListener('mousemove', handleMousemove, false);
+        }
+
+        function handleOrientation(event) {
+          if (event.beta !== null && event.gamma !== null) {
+            var x = event.gamma, y = event.beta;
+
+            if (!that.portrait) {
+              x = event.beta * -1;
+              y = event.gamma;
+            }
+
+            that.cursor_x = (that.w / 2) + (x * 5);
+            that.cursor_y = (that.h / 2) + (y * 5);
+
+            /*var output = document.querySelector('.output');
+            output.innerHTML = "rotZ : " + Math.round(event.alpha) + "<br />\n";
+            output.innerHTML += "rotX: " + Math.round(event.beta) + "<br />\n";
+            output.innerHTML += "rotY: " + Math.round(event.gamma) + "<br />\n";*/
+          }
+        }
+
+        function handleMousemove(event) {
+          that.cursor_x = event.pageX || event.clientX + doc.scrollLeft - doc.clientLeft;
+          that.cursor_y = event.pageY || event.clientY + doc.scrollTop - doc.clientTop;
+        }
+      },
+
+      stop: function () {
+        window.cancelAnimationFrame(animId);
+
+        isPlaying = false;
+      },
+
+      // this.start this whole thing
+      start: function () {
+        // Initialize
+        if (!isInited) {
+          isInited = true;
+          this.init();
+        }
+
+        // Start the animation loop
+        if (!isPlaying) {
+          isPlaying = true;
+          this.loop();
+        }
+
+        window.addEventListener('resize', function () { that.resizer() }, false);
+
+        window.addEventListener('orientationchange', function () { that.resizer() }, false);
+
+        // Move stars on mouse move
+        if (this.settings.mouseMove) {
+          // this.move();
+        }
+
+        return this;
+      }
+    }
+
+    Starfield.defaults = Starfield.prototype.defaults;
+
+    // Finally, the actual plugin code
+    $.fn.starfield = function (options) {
+      return this.each(function () {
+        new Starfield(this, options).start();
+      });
+    }
+
+    window.Starfield = Starfield;
+  })(jQuery, window, document);
+
+  $('.starfield').starfield();
+</script>
+
+</html>

@@ -1,0 +1,1301 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  background-color: #222;
+}
+
+canvas {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+}
+
+.nav-work {
+  animation: glow 1.5s infinite linear;
+}
+
+nav {
+  width: 100%;
+  height: 5rem;
+  background-color: #fc4349;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 100000000000000000000;
+}
+
+.nav-container {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  all: unset;
+  color: aliceblue;
+
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+.links {
+  transform: translateX(-5.5rem);
+}
+
+.links a {
+  padding: 2rem;
+}
+
+.links a:hover {
+  background-color: aliceblue;
+  color: #2e2e2e;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 10000000;
+}
+
+.reel video {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5rem;
+}
+
+.reel video:focus {
+  border: none;
+  outline: none;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  /* background-color: #2e2e2e; */
+  background-color: #222;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100000000;
+}
+
+.prom {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+  padding: 2rem;
+}
+
+.prom video {
+  min-width: 30rem;
+}
+
+.profile_photo {
+  height: 30rem;
+  width: 30rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  border-radius: 5rem;
+}
+
+.profile_photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.name {
+  font-size: 4rem;
+  color: aliceblue;
+  letter-spacing: 0.3rem;
+  word-spacing: 1rem;
+
+  font-weight: 400;
+
+  animation: fromTop 1.5s ease-in;
+}
+
+.expert {
+  font-size: 7rem;
+  color: aliceblue;
+  letter-spacing: 0.3rem;
+  word-spacing: 1rem;
+  font-weight: 900;
+  transform: translateY(-2rem);
+  margin-bottom: 0;
+  margin: 0;
+  padding: 1rem;
+}
+
+.description {
+  font-size: 2.2rem;
+  color: aliceblue;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.5rem;
+  width: 50%;
+
+  font-weight: 400;
+  animation: fromDown 1.5s ease-in;
+}
+
+.about {
+  min-height: 100%;
+  max-width: max-content;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5rem;
+  margin-bottom: 5rem;
+  background-color: #fc4349;
+  color: aliceblue !important;
+}
+
+.skills {
+  min-height: 100%;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5rem;
+
+  margin-bottom: 5rem;
+}
+
+.about h1 {
+  font-size: 6rem;
+  color: aliceblue !important;
+  letter-spacing: 0.3rem;
+  word-spacing: 1rem;
+  margin-bottom: 5rem;
+  margin: 0;
+  padding: 1rem;
+  font-weight: 400;
+}
+
+.skills h1 {
+  font-size: 6rem;
+  color: aliceblue;
+  letter-spacing: 0.3rem;
+  word-spacing: 1rem;
+  margin-bottom: 5rem;
+  margin: 0;
+  padding: 1rem;
+  font-weight: 400;
+}
+
+.top-level {
+  width: 100%;
+}
+
+.paragraph-c {
+  width: 80%;
+  color: #222;
+  font-size: 16px;
+  padding: 0px 40px;
+}
+
+.paragraph-c p {
+  font-size: 21px !important;
+}
+
+.about h2 {
+  font-size: 2.1rem;
+  color: aliceblue !important;
+  word-spacing: 0.1rem;
+  font-weight: 400;
+  transform: translateY(2rem);
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2.8rem;
+  color: aliceblue;
+  word-spacing: 0.1rem;
+  font-weight: 400;
+  transform: translateY(2rem);
+  text-align: center;
+}
+
+.about p {
+  color: aliceblue;
+  line-height: 150%;
+  font-size: 2.8rem;
+  letter-spacing: 0.1rem;
+  text-align: justify;
+  word-spacing: 0.1rem;
+
+  font-weight: 400;
+}
+
+.readmore {
+  all: unset;
+  color: aliceblue;
+
+  font-size: 2.3rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+
+  border: 0.1rem solid aliceblue;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.3s;
+}
+
+.readmore:hover {
+  background-color: aliceblue;
+  color: #2e2e2e;
+  transform: translateY(-1rem);
+}
+
+.work {
+  height: max-content;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fc4349 !important;
+  color: aliceblue !important;
+}
+
+.work h1 {
+  font-size: 6rem;
+  color: aliceblue;
+  letter-spacing: 0.3rem;
+  word-spacing: 1rem;
+
+  margin-bottom: 0;
+  margin: 0;
+  padding: 1rem;
+  font-weight: 400;
+}
+
+.work h2 {
+  font-size: 2.5rem;
+  color: aliceblue;
+  word-spacing: 0.1rem;
+  width: 50%;
+  font-weight: 400;
+  transform: translateY(1rem);
+}
+
+.work-area {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 7rem;
+}
+
+.cat {
+  background-color: rgba(46, 46, 46, 0.5);
+  height: max-content;
+  max-height: max-content;
+  width: 25rem;
+  margin-bottom: 7rem;
+  color: aliceblue;
+  border: 0.5rem solid aliceblue;
+  padding: 5rem;
+  border-radius: 1rem;
+}
+
+.cat-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.cat h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+
+.cat-box {
+  height: 70%;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.open {
+  all: unset;
+  color: aliceblue;
+
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+
+  border: 0.1rem solid aliceblue;
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: all 0.3s;
+}
+
+.open:hover {
+  background-color: aliceblue;
+  color: #2e2e2e;
+}
+
+.contact {
+  min-height: 100vh;
+  max-height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+.contact h1 {
+  font-size: 6rem;
+  color: aliceblue;
+  letter-spacing: 0.3rem;
+  word-spacing: 1rem;
+
+  margin-bottom: 0;
+  margin: 0;
+  padding: 1rem;
+  font-weight: 400;
+}
+
+.contact h2 {
+  font-size: 2.1rem;
+  color: aliceblue;
+  word-spacing: 0.1rem;
+  width: 50%;
+  font-weight: 400;
+  transform: translateY(1rem);
+
+  margin-bottom: 2rem;
+}
+
+form {
+  margin-top: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-contact {
+  width: 100%;
+  height: max-content;
+  margin-top: 4rem;
+  display: flex;
+}
+
+.otherinfo {
+  flex: 1;
+  height: max-content;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+.address p,
+.contact-info p {
+  display: flex;
+  flex-direction: column;
+}
+
+.address,
+.contact-info,
+.info-address {
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.address::after,
+.info-address::after {
+  content: "";
+  position: absolute;
+  height: 0.3rem;
+  width: 40%;
+  background-color: aliceblue;
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email {
+  color: #222;
+}
+
+.otherinfo img {
+  width: 3rem;
+  margin: 1rem;
+}
+.otherinfo {
+  color: #222;
+  font-size: 1.7rem;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  all: unset;
+  padding: 1.5rem;
+  border: 0.1rem solid aliceblue;
+  border-radius: 1rem;
+
+  width: 40rem;
+  margin-bottom: 2rem;
+
+  color: aliceblue;
+  font-size: 1.7rem;
+}
+
+input::placeholder {
+  color: aliceblue;
+  font-size: 1.7rem;
+}
+
+button {
+  all: unset;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  border: 0.1rem solid aliceblue;
+  border-radius: 1rem;
+  color: aliceblue;
+
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: aliceblue;
+  color: #2e2e2e;
+  transform: translateY(-1rem);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  background-color: #fc4349;
+  color: #fff;
+}
+
+.gall {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links {
+  margin-top: 2rem;
+}
+
+.gall a {
+  padding: 1rem;
+}
+
+footer .link {
+  all: unset;
+  color: aliceblue;
+
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+
+  padding: 1rem;
+}
+
+/* Work section */
+
+.work-header {
+  height: 100vh;
+
+  background: linear-gradient(to right bottom, rgba(252, 67, 73, 0.5), #fc4349),
+    url("./images/BRANDBOOK/logo.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-header a {
+  all: unset;
+  color: aliceblue;
+  font-size: 3rem;
+  border: 0.2rem solid aliceblue;
+  padding: 1rem;
+  cursor: pointer;
+  animation: fromDown 1.5s ease-in;
+  transition: all 0.2s linear;
+  border-radius: 1rem;
+}
+
+.work-header a:hover {
+  background-color: aliceblue;
+  color: #2e2e2e;
+  transform: scale(1.2);
+}
+
+.work1-header {
+  height: 100vh;
+
+  background: linear-gradient(to right bottom, rgba(252, 67, 73, 0.5), #fc4349),
+    url("./images/");
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work2-header {
+  height: 100vh;
+
+  background: linear-gradient(to right bottom, rgba(252, 67, 73, 0.5), #fc4349),
+    url("./images/interactive/1.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work3-header {
+  height: 100vh;
+
+  background: linear-gradient(to right bottom, rgba(252, 67, 73, 0.5), #fc4349),
+    url("./images/portfolio/demo/1.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work4-header {
+  height: 100vh;
+
+  background: linear-gradient(to right bottom, rgba(252, 67, 73, 0.5), #fc4349);
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work5-header {
+  height: 100vh;
+
+  background: linear-gradient(to right bottom, rgba(252, 67, 73, 0.5), #fc4349);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work6-header {
+  height: 100vh;
+
+  background: linear-gradient(to right bottom, rgba(252, 67, 73, 0.5), #fc4349);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work7-header {
+  height: 100vh;
+
+  background: linear-gradient(to right bottom, rgba(252, 67, 73, 0.5), #fc4349);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.patch {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./projects/branding/patch/patch.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-size: 7rem;
+}
+
+.social-videos {
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+  width: 100%;
+  overflow: hidden;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.myWork {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.social-videos video {
+  flex: 1;
+  width: 40%;
+  height: 100%;
+}
+
+.download {
+  color: aliceblue;
+  display: inline-block;
+
+  font-size: 1.6rem;
+  border: 1px solid #fff;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  position: relative;
+  font-weight: 700;
+  top: 5rem;
+}
+
+.banners {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+.banners img {
+  margin-bottom: 2rem;
+}
+
+.tshirt {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./projects/branding/Tshirt/shirt.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-size: 7rem;
+}
+
+.images {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.images img {
+  width: 20%;
+  height: auto;
+  margin-bottom: 2rem;
+  object-fit: contain;
+}
+
+.work8-header {
+  height: 100vh;
+
+  background: linear-gradient(to right bottom, rgba(252, 67, 73, 0.5), #fc4349),
+    url("./images/BRANDBOOK/logo.png");
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-header h1 {
+  color: aliceblue;
+  font-size: 6rem;
+  letter-spacing: 0.3rem;
+  position: relative;
+  animation: fromTop 1.5s ease-in;
+  font-weight: 500;
+}
+
+.work-header h1::after {
+  content: "";
+  position: absolute;
+  height: 0.3rem;
+  width: 80%;
+  background-color: aliceblue;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.work-description {
+  height: max-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.work-description h1 {
+  color: aliceblue;
+  font-size: 6rem;
+  letter-spacing: 0.3rem;
+  position: relative;
+  font-weight: 900;
+}
+
+.work-description h1::after {
+  content: "";
+  position: absolute;
+  height: 0.3rem;
+  width: 80%;
+  background-color: aliceblue;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.work-description p {
+  font-size: 2.8rem;
+  margin-top: 2rem;
+  line-height: 150%;
+  color: aliceblue;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.5rem;
+  width: 80%;
+  font-weight: 400;
+}
+
+.work-cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 30%;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 25rem;
+  width: 25rem;
+  padding: 3rem;
+  transition: all 0.2s linear;
+  margin-bottom: 5rem;
+}
+a {
+  text-decoration: none;
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+  margin-top: -2rem;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.card img {
+  height: 100%;
+  margin-bottom: 3rem;
+  width: 100%;
+  object-fit: contain;
+}
+
+.special {
+  min-height: 60vh;
+  width: 100%;
+  max-height: max-content;
+  background: linear-gradient(to right bottom, rgba(252, 67, 73, 0.8), #fc4349),
+    url("./images/BRANDBOOK/logo.png");
+  background-size: contain;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.special2 {
+  background: linear-gradient(to right bottom, rgba(252, 67, 73, 0.8), #fc4349),
+    url("./images/BRANDBOOK/logo.png");
+}
+
+.special3 {
+  background: linear-gradient(to right bottom, rgba(252, 67, 73, 0.8), #fc4349),
+    url("./images/BRANDBOOK/logo.png");
+}
+
+.special h2 {
+  color: aliceblue;
+  font-size: 5rem;
+}
+
+.special p {
+  font-size: 2rem;
+}
+
+.work-photos {
+  height: 85vh;
+  background: linear-gradient(to right bottom, rgba(252, 67, 73, 0.8), #fc4349);
+
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-items: center;
+}
+
+.work1-photos {
+  height: 85vh;
+  background: linear-gradient(to right bottom, rgba(252, 67, 73, 0.8), #fc4349),
+    url("./images/portfolio/signage/2.png");
+
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-items: center;
+}
+
+.work3-photos {
+  height: max-content;
+  background: linear-gradient(to right bottom, rgba(252, 67, 73, 0.8), #fc4349),
+    url("./images/restaurant/hero.png");
+
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-items: center;
+}
+
+.work3-photos .grid1 {
+  margin-bottom: 30px;
+}
+
+.work3-photos img {
+  width: 200px !important;
+  padding: 20px;
+  margin: 100px;
+  object-fit: contain;
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tech-names ol {
+  color: aliceblue;
+  list-style-type: lower-roman;
+  font-size: 2rem;
+}
+
+.tech-names li {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.block {
+  height: max-content;
+  width: 13rem;
+  position: relative;
+  margin: 3rem;
+  transition: all 0.2s ease;
+}
+
+.tech img {
+  padding: 1rem;
+  width: 6rem;
+}
+.tech h3 {
+  color: aliceblue;
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+.block:not(:last-child):after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  right: -2rem;
+  background-color: #fff;
+  height: 7rem;
+  width: 0.2rem;
+}
+
+.block:hover {
+  transform: scale(1.2);
+}
+
+.work2-photos {
+  height: 85vh;
+  background: linear-gradient(to right bottom, rgba(252, 67, 73, 0.5), #fc4349),
+    url("./images/catalogue/5.png");
+
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-items: center;
+}
+
+.grid1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.work-photos img {
+  width: 30%;
+  border: 1rem solid aliceblue;
+  border-radius: 1rem;
+
+  transition: all 0.2s linear;
+}
+
+.work-photos img:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 959px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 751px) {
+  .description {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 711px) {
+  .nav-container {
+    width: 95%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 587px) {
+  header {
+    height: max-content;
+    margin-bottom: 10rem;
+  }
+
+  .cat {
+    height: 60rem;
+    max-height: max-content;
+    width: 35rem;
+    margin-bottom: 7rem;
+    color: aliceblue;
+    border: 0.5rem solid aliceblue;
+    padding: 3rem;
+    border-radius: 1rem;
+  }
+
+  .work-header h1 {
+    font-size: 4rem;
+  }
+
+  .work-description h1 {
+    font-size: 3rem;
+  }
+
+  .work-description p {
+    font-size: 2rem;
+  }
+
+  .work-description p {
+    width: 90%;
+  }
+
+  .grid1 img {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .work-photos {
+    height: max-content;
+    padding: 1rem;
+  }
+
+  .expert {
+    font-size: 5rem;
+  }
+
+  nav {
+    height: max-content;
+    position: relative;
+  }
+
+  .nav-container {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-title,
+  .links,
+  .nav-work {
+    padding: 2rem;
+  }
+
+  .links {
+    transform: translateX(0rem);
+  }
+
+  .about {
+    margin-bottom: 10rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 474px) {
+  input,
+  textarea {
+    width: 20rem;
+  }
+
+  .card:hover {
+    transform: scale(1);
+  }
+
+  .paragraph-c p {
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .contact h2 {
+    width: 100%;
+  }
+
+  .contact h1 {
+    font-size: 6rem;
+  }
+
+  .about {
+    margin-bottom: 5rem;
+    height: 100%;
+  }
+
+  .work h2 {
+    width: 100%;
+  }
+
+  .work h1 {
+    font-size: 4rem;
+  }
+
+  .about h2 {
+    width: 100%;
+  }
+
+  .about h1 {
+    font-size: 4rem;
+  }
+
+  .readmore {
+    font-size: 1.8rem;
+  }
+
+  .cat {
+    height: 50rem;
+    width: 28rem;
+    margin-bottom: 5rem;
+    color: aliceblue;
+    border: 0.5rem solid aliceblue;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .expert {
+    font-size: 3rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1.7rem;
+  }
+}
+
+@keyframes fromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  80% {
+    transform: translateY(1rem);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fromDown {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  80% {
+    transform: translateY(-1rem);
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    opacity: 0;
+    transform: translate(3rem, -2rem);
+  }
+
+  80% {
+    transform: translate(-1rem, -2rem);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, -2rem);
+    opacity: 1;
+  }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: none;
+  }
+
+  80% {
+    text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px blueviolet,
+      0 0 10px blueviolet, 0 0 12.5px blueviolet, 0 0 30px blueviolet,
+      0 0 17.5px blueviolet;
+  }
+
+  100% {
+    text-shadow: none;
+  }
+}
+
+
+@media only screen and (max-width: 700px){
+  .main-contact {
+    flex-direction: column;
+  }
+
+  .my-about {
+    flex-direction: column;
+  }
+}
